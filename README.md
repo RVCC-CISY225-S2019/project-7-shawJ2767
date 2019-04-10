@@ -9,7 +9,7 @@
 
 In this project you are using the design document as shown in 
 
-[Adobe XD RWD of ABout Me](https://xd.adobe.com/spec/a5db66b4-3086-4f9b-4c62-b0ecce091949-d3ea/ "Adobe XD RWD of ABout Me")
+[Adobe XD RWD of About Me](https://xd.adobe.com/spec/a5db66b4-3086-4f9b-4c62-b0ecce091949-d3ea/ "Adobe XD RWD of ABout Me")
 
 You will be adding media queries and CSS grids to get your About Me page looking similar to the design images.
 
