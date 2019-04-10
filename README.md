@@ -1,8 +1,7 @@
 # Project 7
 ## Add responsive web design for tablets and wide screens & Add styling for print
 
-**You are expected to thoroughly go through the materials in Module Week 10. Also you must use our CSS formatting rules from the CISY 225 Style Guide. You are also required to use beautify inside of brackets.**
-
+**You are expected to thoroughly go through the materials in Module Week 10. Also you must use our CSS formatting rules from the CISY 225 Style Guide. You are also required to use Beautify inside of Brackets before submitting. You are encourage to beautify often as you code your HTML and CSS.**
 
 
 **You Must Have a Perfect Project 6 Repo. Make all changes to P6 before starting this project. Your grade depends on this. If you need help, ask me for help.**
