@@ -1,0 +1,150 @@
+body {
+    font-family: 'Amiri', serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+button, input, select, textarea {
+  font-family : inherit;
+  font-size   : 100%;
+}
+
+input, textarea, select, button {
+  width : 10rem;
+  margin: 0;
+
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+          box-sizing: border-box;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+  overflow: hidden;
+}
+
+input:focus, textarea:focus {
+  background   : rgba(0,0,0,.1);
+  border-radius: 5px;
+  outline      : none;
+}
+
+
+/*  grids */
+
+main {
+	display: grid;
+}
+
+/* hero content */
+
+.content {
+	display: grid;
+}
+
+/* about content */
+
+.about-content {
+	display: grid;
+}
+
+/*  gallery */
+
+.gallery {
+	display: grid;
+}
+figure {
+    display: grid;
+}
+/*  article */
+
+article {
+	display: grid;
+}
+
+/* form container */
+.form-container {
+	display: grid;
+}
+
+/* footer */
+
+footer {
+	display: grid;
+}
+
+/*  layout */
+
+/*   mobile is the default layout*/
+
+/* tablet layout >=48rem (768px) */
+
+@media screen and (min-width: 48rem) {
+
+	/*      hero content */
+    
+    .content {
+        grid-template-columns: 1fr 8fr 1fr;
+    
+    }
+    
+    .content picture,
+    .content p, 
+    .about-content{
+        grid-column: 2/3;
+    }
+
+	/*	about content */
+
+	/*	gallery */
+    
+    figure{
+        grid-template-columns: 1fr 1fr;
+        align-items:  center;
+        justify-items: center;
+    }
+
+	/*	article */
+    
+    article,
+    .form-container{
+        grid-template-columns: 1fr 48rem 1fr;
+    }
+        
+        .story h1,
+    .story-body,
+    form {
+        grid-column: 2/3;
+    }
+
+	/*	form */
+
+
+}
+
+/* wide screen layout >=64rem (1024px) */
+
+@media screen and (min-width: 64rem) {
+
+	/*      hero content */
+
+	/*	about content */
+
+	/*	gallery */
+    
+    .mobile-first {
+        display: none;
+    }
+    
+    .gallery {
+         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+	/*	article */
+
+	/*	form */
+
+}
