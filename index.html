@@ -5,7 +5,7 @@
     <title>About Me</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/nav-style.css">
@@ -24,7 +24,7 @@
             </span>
             <a href="#header" class="logo">
                 <div class="logo-container">
-                    <img class="logo" src="images/logo-1913689.svg" alt="Company Logo">
+                    <img class="logo" src="logo.svg" alt="Company Logo">
                     <h1 class="page-title">Web Dev I</h1>
                 </div>
             </a>
@@ -174,6 +174,18 @@
                 <p>"Yes, sir. I am afraid that I am a little late, but I am not quite my own master, you know. I am sorry that Miss Sutherland has troubled you about this little matter, for I think it is far better not to wash linen of the sort in public. It was quite against my wishes that she came, but she is a very excitable, impulsive girl, as you may have noticed, and she is not easily controlled when she has made up her mind on a point. Of course, I did not mind you so much, as you are not connected with the official police, but it is not pleasant to have a family misfortune like this noised abroad. Besides, it is a useless expense, for how could you possibly find this Hosmer Angel?"</p>
             </div>
 
+        </article>
+        <article>
+            <div class="story-body">
+                <h1> Variable Fonts</h1>
+                <p> When a graphic designer prepares their work, they typically export the final artwork in a way that either embeds all of the fonts used, or they provide an export archive that contains all of the assets used separately, a bit like a basic website. The cost to the designer depends on the suitability of the typeface for the rendering context (is it legible at small sizes, for example) and the license to use the fonts.On the web, we have to consider both aspects, plus the associated bandwidth costs. For every member of a typeface family used in our designs, we have had to require another font file to be downloaded by our users before they can see that text. Only including the Regular and Bold styles, plus their italic counterparts, can amount to 500k or more of data. This has been a sticking point for web designers and developers, as a richer typographic experience comes at a cost. This is even before we have dealt how the fonts are rendered, and the fallback or delayed-loading patterns we are going to use (such as "FOIT" and "FOUT").) A variable font is a collection of master styles, with one central 'default' master (usually the Regular font style) and multiple registered “axes” which tie the central master to the other masters. For example, the Weight axis might connect a Light style master to the default style and through to the Bold style master. The individual styles that can be located along this axis are called instances.</p>
+
+                <p>The way that Italics are handled in variable fonts is interesting, as there are two difference approaches. Typefaces like Helvetica or Roboto have interpolation compatible contours, so their Roman and Italic styles can be interpolated between and the Slant axis can be used to get from Roman to Italic. Other typefaces (such as Garamond, Baskerville, or Bodoni) have Roman and Italic glyph contours that are not interpolation compatible. For example, the contours that typically define a Roman lowercase “n” do not match the contours used to define an Italic lowercase “n”. Instead of interpolating one contour to the other, the Italic axis toggles from Roman to Italic contours.</p>
+
+                <p>Since the font developers define which axes are available in their fonts, it is essential to check the font's documentation to know what is available. For example, in the Gingham variable font designed by Christoph Koeberlin, there are two axes available, Width and Weight. The Amstelvar variable font does not contain a Slant axis, but does have an axis it calls Grade, plus many more axes. A Grade axis is interesting as it changes the weight of the font without changing the widths, so line breaks does not change. By playing with a Grade axis, you can avoid being forced to fiddle with changes to Weight axis that effects the overall width, and then changes to the Width axis that effect the overall weight. This is possible because the Amstelvar default style has been deconstructed in the 4 fundamental aspects of form: black or positive shapes, white or negative shapes, and the x and y dimensions. These 4 aspects can be mixed to form the other styles, such as Width and Weight, in the way that primary colors can be mixed to create any other color.</p>
+                <div class="skinny">This is a skinny version of MovementV font.</div>
+                <div class="chunky">This is a chunky version of MovementV font.</div>
+            </div>
         </article>
         <!-- end of Sherlock Holmes story -->
     </main>
